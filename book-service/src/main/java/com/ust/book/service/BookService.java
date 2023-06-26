@@ -6,6 +6,9 @@ import com.ust.book.dto.BookDto;
 import java.util.List;
 import java.util.Optional;
 
-public interface UserBookService {
-    List<Book> findByTitle(String title);
+public interface BookService {
+
+    Optional<Book> findByIsbn(long isbn);
+    List<Book> findAll();
+
 }

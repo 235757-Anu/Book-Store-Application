@@ -18,6 +18,8 @@ public class Book {
     private long isbn;
     private String title;
     private String author;
+
+    @Column(length = 3000)
     private String summary;
     private String language;
     private int pageCount;

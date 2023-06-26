@@ -10,13 +10,17 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class UserBookServiceImpl implements UserBookService{
+public class BookServiceImpl implements BookService {
     @Autowired
     private BookRepository bookRepository;
 
     @Override
-    public List<Book> findByTitle(String title) {
-        return bookRepository.findByTitleContainingWord(title);
+    public Optional<Book> findByIsbn(long isbn) {
+        return bookRepository.findByIsbn(isbn);
     }
 
+    @Override
+    public List<Book> findAll() {
+        return bookRepository.findAll();
+    }
 }
