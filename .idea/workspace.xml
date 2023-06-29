@@ -4,37 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f6d1123-9180-4090-befc-b2f812943675" name="Changes" comment="initial commit">
-      <change afterPath="$PROJECT_DIR$/book-service/src/main/java/com/ust/book/dto/UpdateDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-service/src/main/java/com/ust/book/exception/BookAlreadyExistsException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-service/src/main/java/com/ust/book/exception/BookNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-service/src/main/java/com/ust/book/exception/NoBooksFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-service/src/main/java/com/ust/book/exception/advice/ApiExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-service/src/main/java/com/ust/book/exception/dto/ApiError.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-service/src/main/java/com/ust/book/exception/dto/ApiErrorBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-service/src/main/java/com/ust/book/exception/dto/ApiValidationError.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-service/src/main/java/com/ust/book/service/BookService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book-service/src/main/java/com/ust/book/service/BookServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rating-service/src/main/java/com/ust/book/controller/RatingController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rating-service/src/main/java/com/ust/book/domain/Rating.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rating-service/src/main/java/com/ust/book/dto/RatingDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rating-service/src/main/java/com/ust/book/repository/RatingRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rating-service/src/main/java/com/ust/book/service/RatingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rating-service/src/main/java/com/ust/book/service/RatingServiceImpl.java" afterDir="false" />
+    <list default="true" id="6f6d1123-9180-4090-befc-b2f812943675" name="Changes" comment="exception">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book-service/src/main/java/com/ust/book/controller/AdminBookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/java/com/ust/book/controller/AdminBookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-service/src/main/java/com/ust/book/controller/UserBookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/java/com/ust/book/controller/UserBookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-service/src/main/java/com/ust/book/domain/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/java/com/ust/book/domain/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-service/src/main/java/com/ust/book/dto/BookDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/java/com/ust/book/dto/BookDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-service/src/main/java/com/ust/book/dto/CreateDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/java/com/ust/book/dto/CreateDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-service/src/main/java/com/ust/book/repository/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/java/com/ust/book/repository/BookRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book-service/src/main/java/com/ust/book/service/AdminBookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/java/com/ust/book/service/AdminBookService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-service/src/main/java/com/ust/book/service/AdminBookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/java/com/ust/book/service/AdminBookServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-service/src/main/java/com/ust/book/service/UserBookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/java/com/ust/book/service/UserBookService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-service/src/main/java/com/ust/book/service/UserBookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/java/com/ust/book/service/UserBookServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/resources/application.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/ust/book/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/ust/book/service/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -259,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686630171377</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="exception">
+      <created>1687780951112</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1687780951112</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -275,6 +257,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="exception" />
+    <option name="LAST_COMMIT_MESSAGE" value="exception" />
   </component>
 </project>

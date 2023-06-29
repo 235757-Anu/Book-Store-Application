@@ -7,5 +7,7 @@ import java.util.List;
 import java.util.Optional;
 
 public interface UserBookService {
+    List<Book> findByCategories(String[] categories);
+    List<Book> findByAuthor(String author);
     List<Book> findByTitle(String title);
 }

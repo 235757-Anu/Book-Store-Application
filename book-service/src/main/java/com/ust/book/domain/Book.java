@@ -19,10 +19,15 @@ public class Book {
     private String title;
     private String author;
 
+    @ElementCollection
+    @OrderColumn(name = "category_order")
+    private String[] categories;
+
     @Column(length = 3000)
     private String summary;
     private String language;
     private int pageCount;
     private int publishYear;
     private String imageUrl;
+    private double rating;
 }

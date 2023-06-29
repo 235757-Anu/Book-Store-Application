@@ -15,6 +15,16 @@ public class UserBookServiceImpl implements UserBookService{
     private BookRepository bookRepository;
 
     @Override
+    public List<Book> findByCategories(String[] categories) {
+        return bookRepository.findByCategories(categories);
+    }
+
+    @Override
+    public List<Book> findByAuthor(String author) {
+        return bookRepository.findByAuthorContainingWord(author);
+    }
+
+    @Override
     public List<Book> findByTitle(String title) {
         return bookRepository.findByTitleContainingWord(title);
     }
