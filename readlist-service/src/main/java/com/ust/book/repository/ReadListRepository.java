@@ -10,11 +10,7 @@ import java.util.Optional;
 
 @Repository
 public interface ReadListRepository extends JpaRepository<ReadList,Long> {
-
-
-  
-
-    void deleteByIsbn(long isbn);
-
     Optional<ReadList> findByIsbn(long isbn);
+    Optional<ReadList> findByUsername(String username);
+    Optional<ReadList> findByIsbnAndUsername(long isbn, String username);
 }

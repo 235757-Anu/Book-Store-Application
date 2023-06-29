@@ -4,21 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f6d1123-9180-4090-befc-b2f812943675" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/readlist-service/src/main/java/com/ust/book/controller/ReadListController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/readlist-service/src/main/java/com/ust/book/domain/ReadList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/readlist-service/src/main/java/com/ust/book/dto/BookDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/readlist-service/src/main/java/com/ust/book/dto/BookUserDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/readlist-service/src/main/java/com/ust/book/dto/RatingResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/readlist-service/src/main/java/com/ust/book/dto/ReadListDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/readlist-service/src/main/java/com/ust/book/dto/ToListDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/readlist-service/src/main/java/com/ust/book/repository/ReadListRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/readlist-service/src/main/java/com/ust/book/service/ReadListService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/readlist-service/src/main/java/com/ust/book/service/ReadListServiceImpl.java" afterDir="false" />
+    <list default="true" id="6f6d1123-9180-4090-befc-b2f812943675" name="Changes" comment="devika">
+      <change afterPath="$PROJECT_DIR$/readlist-service/src/main/java/com/ust/book/exception/Advice/ApiExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readlist-service/src/main/java/com/ust/book/exception/BookAlreadyAddedException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readlist-service/src/main/java/com/ust/book/exception/BookNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readlist-service/src/main/java/com/ust/book/exception/dto/ApiError.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readlist-service/src/main/java/com/ust/book/exception/dto/ApiErrorBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readlist-service/src/main/java/com/ust/book/exception/dto/ApiValidationError.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readlist-service/src/main/java/com/ust/book/service/ApiClientBook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readlist-service/src/main/java/com/ust/book/service/ApiClientRating.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/readlist-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/readlist-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readlist-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/readlist-service/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readlist-service/src/main/java/com/ust/book/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/readlist-service/src/main/java/com/ust/book/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readlist-service/src/main/java/com/ust/book/controller/ReadListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/readlist-service/src/main/java/com/ust/book/controller/ReadListController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readlist-service/src/main/java/com/ust/book/domain/ReadList.java" beforeDir="false" afterPath="$PROJECT_DIR$/readlist-service/src/main/java/com/ust/book/domain/ReadList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readlist-service/src/main/java/com/ust/book/dto/BookDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/readlist-service/src/main/java/com/ust/book/dto/BookDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readlist-service/src/main/java/com/ust/book/dto/BookUserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/readlist-service/src/main/java/com/ust/book/dto/BookUserDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readlist-service/src/main/java/com/ust/book/dto/RatingResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/readlist-service/src/main/java/com/ust/book/dto/RatingResponseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readlist-service/src/main/java/com/ust/book/dto/ReadListDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/readlist-service/src/main/java/com/ust/book/dto/ReadListDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readlist-service/src/main/java/com/ust/book/dto/ToListDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/readlist-service/src/main/java/com/ust/book/dto/ToListDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readlist-service/src/main/java/com/ust/book/repository/ReadListRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/readlist-service/src/main/java/com/ust/book/repository/ReadListRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readlist-service/src/main/java/com/ust/book/service/ReadListService.java" beforeDir="false" afterPath="$PROJECT_DIR$/readlist-service/src/main/java/com/ust/book/service/ReadListService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readlist-service/src/main/java/com/ust/book/service/ReadListServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/readlist-service/src/main/java/com/ust/book/service/ReadListServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,6 +158,14 @@
       <option name="presentableId" value="Default" />
       <updated>1686313743110</updated>
     </task>
+    <task id="LOCAL-00001" summary="devika">
+      <created>1687929499072</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1687929499074</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -175,5 +190,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="devika" />
+    <option name="LAST_COMMIT_MESSAGE" value="devika" />
   </component>
 </project>
