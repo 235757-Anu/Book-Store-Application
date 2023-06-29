@@ -1,6 +1,5 @@
 package com.ust.book.controller;
 
-
 import com.ust.book.dto.BookDto;
 import com.ust.book.dto.RatingPostDto;
 import com.ust.book.service.RatingService;
@@ -48,6 +47,4 @@ import org.springframework.web.bind.annotation.*;
             ratingService.updateRatingAndReview(isbn, ratingPostDto);
             return ResponseEntity.ok().build();
         }
-
-
 }

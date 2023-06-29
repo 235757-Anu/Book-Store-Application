@@ -26,5 +26,4 @@ import javax.persistence.*;
         private double rating;
 
         private String review;
-
 }
