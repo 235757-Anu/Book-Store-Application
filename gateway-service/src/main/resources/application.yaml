@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 9090
 spring:
   application:
     name: gateway-service
@@ -9,8 +9,18 @@ spring:
         - id: user-service
           uri: lb://USER-SERVICE
           predicates:
-            - Path=/users/**
-            - Method=GET,POST,PUT,DELETE
+            - Path=api/v1/users/**
+#            - Method=GET,POST,PUT,DELETE
+        - id: book-service
+          uri: lb://BOOK-SERVICE
+          predicates:
+            - Path=/api/v1/books/admin/**
+
+        - id: book-service
+          uri: lb://book-service
+          predicates:
+             - Path=/api/v1/books/user/**
+
 eureka:
   client:
     serviceUrl:
