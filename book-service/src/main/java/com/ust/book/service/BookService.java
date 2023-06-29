@@ -11,4 +11,5 @@ public interface BookService {
     Optional<Book> findByIsbn(long isbn);
     List<Book> findAll();
 
+    List<Book> findByAllIsbn(List<String> isbns);
 }
