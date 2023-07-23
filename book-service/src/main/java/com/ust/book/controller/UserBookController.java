@@ -41,19 +41,6 @@ public class UserBookController {
         }
         return ResponseEntity.status(HttpStatus.OK).body(EntityToDto(book.get()));
     }
-    @PostMapping("/isbn")
-    public ResponseEntity<ToListDto> getAllByIsbn(@RequestBody List<String> isbns){
-        logger.info("getAllByIsbn: Fetching all book with isbns {}", isbns.toString());
-        List<Book> books = bookService.findByAllIsbn(isbns);
-        if(books.isEmpty()){
-            logger.error("getAllByIsbn: Fetching book with isbns {} not found", isbns.toString());
-            throw new NoBooksFoundException(
-                    String.format("Book with isbn %s not found", isbns.toString())
-            );
-        }
-        List<BookDto> bookDtoList = books.stream().map(this::EntityToDto).toList();
-        return ResponseEntity.status(HttpStatus.OK).body(new ToListDto(bookDtoList));
-    }
     @PostMapping("/filter")
     public ResponseEntity<ToListDto> getAllBookFilter(
             @RequestBody String[] categories )

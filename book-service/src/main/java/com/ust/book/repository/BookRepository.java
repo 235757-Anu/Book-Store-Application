@@ -20,7 +20,4 @@ public interface BookRepository extends JpaRepository<Book,Long> {
     @Query("SELECT b FROM Book b JOIN b.categories c WHERE c IN :categories")
     List<Book> findByCategories(@Param("categories") String[] categories);
 
-    List<Book> findByAuthor(String author);
-
-    List<Book> findByAllIsbn(List<String> isbns);
 }
